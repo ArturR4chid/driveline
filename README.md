@@ -2,11 +2,11 @@
 
 ### integrantes 
 
-Ana Clara Quirino (front-end) 22301593
-Laura Vitoria (front-end) 22300872
-Thais Silva (front-end) 22402110
-Alexandre Soutelo (back-end) 22301070
-Artur Rachid (back-end) 22300236
+Ana Clara Quirino (front-end) 22301593 <br>
+Laura Vitoria (front-end) 22300872 <br>
+Thais Silva (front-end) 22402110 <br>
+Alexandre Soutelo (back-end) 22301070 <br>
+Artur Rachid (back-end) 22300236 <br>
 
 - [ ] O sistema deve permitir o cadastro de usuários e carros
 - [ ] O usuário deve poder redefinir a senha.
