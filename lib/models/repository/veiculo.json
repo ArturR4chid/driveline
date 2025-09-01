@@ -1,0 +1,22 @@
+{
+  "veiculos": [
+    {
+      "id": 1,
+      "marca": "Toyota",
+      "modelo": "Corolla",
+      "ano": 2020,
+      "placa": "ABC-1234",
+      "quilometragem": 45000.5,
+      "proprietarioId": 1
+    },
+    {
+      "id": 2,
+      "marca": "Honda",
+      "modelo": "Civic",
+      "ano": 2019,
+      "placa": "XYZ-5678",
+      "quilometragem": 60000,
+      "proprietarioId": 2
+    }
+  ]
+}
