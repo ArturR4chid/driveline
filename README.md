@@ -7,35 +7,57 @@ Laura Vitoria (front-end) 22300872 <br>
 Thais Silva (front-end) 22402110 <br>
 Alexandre Soutelo (back-end) 22301070 <br>
 Artur Rachid (back-end) 22300236 <br>
+### requisitos entregues
 
-- [ ] O sistema deve permitir o cadastro de usuários e carros
-- [ ] O usuário deve poder redefinir a senha.
-- [ ] O sistema deve enviar notificações de lembretes.
-- [ ] Relatar problemas do carro.
-- [ ] Reconhecimento do modelo do carro.
-- [ ] Localização de mecânicas próximas.
-- [ ] Agendamento de visita mecânica.
-- [ ] Lembrete de manutenção preventiva.
-- [ ] O sistema deve ter um chat para falar com mecânico.
-- [ ] Notificação de rodízio.
+- [x] O sistema deve permitir o cadastro de usuários e carros✅
+- [x] O usuário deve poder redefinir a senha✅
+- [x] Integração com GPS.✅
+- [x] Relatar problemas do carro  ✅
+- [x] Agendamento de visita mecânica ✅
+- [x] Informação sobre garantia de peças ✅
+- [x] Consulta de peças do carro. ✅
+- [x] Registro de multas e IPVA ✅
+- [x] Sistema de emergência ✅
+- [x] Reconhecimento do modelo do carro✅ 
 
-- [ ]  Consulta de peças do carro.
+---
 
-- [ ]  Cálculo de custos de manutenção.
+### pequeno tutorial
 
-- [ ] Informação sobre garantia de peças.
+primeiro de tudo, va no seu **git hub** e copie;
+em seguida va no seu terminal e rode o comando
+```
+$ git clone 
+```
+em seguida rode o comando
+```
+$ cd driveline
+```
+logo após rode o comando 
 
-- [ ] Relatório de falhas recorrentes.
+```
+$ code .
+```
+pronto, agora que voce ja esta com o seu visual studio code aberto, aperte no seu teclado
 
-- [ ] Sistema de emergências com guinchos.
+```
+ctrl + j
+```
 
-- [ ] Integração com GPS.
+agora rode 
 
-- [ ] Registro de multas e IPVA.
+```
+flutter pub get
+```
 
-- [ ] O sistema deve fornecer um painel para mecânicos, permitindo visualizar chamados, conversar com usuários, enviar tutoriais e acessar o histórico de atendimentos.
+em seguida rode
 
-- [ ] Comparação de preços de serviços mecânicos.
+```
+flutter run
+```
 
-- [ ] Sistema de fidelidade para mecânicos.
+o **login** para conseguir entrar na aplicação se é 
 
+joao@gmail.com
+e a senha é
+abcdef
