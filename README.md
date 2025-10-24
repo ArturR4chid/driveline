@@ -19,7 +19,16 @@ Artur Rachid (back-end) 22300236 <br>
 - [x] Registro de multas e IPVA ✅
 - [x] Sistema de emergência ✅
 - [x] Reconhecimento do modelo do carro✅ 
-
+- [x] Sistema de emergências com guinchos.✅
+- [x] Modo oficina, para mecânicos ajudarem usuários.✅
+- [x] Comparação de preços de serviços mecânicos.✅
+- [x] Sistema de fidelidade para mecânicos.✅
+- [x] Relatório de falhas recorrentes.✅
+- [x] Informação sobre garantia de peças.✅
+- [x] Cálculo de custos de manutenção.✅
+- [x] O sistema deve ter um chat para falar com mecânico✅
+- [x] Lembrete de manutenção preventiva✅
+- [x] O sistema deve enviar notificações de lembretes✅
 ---
 
 ### pequeno tutorial
