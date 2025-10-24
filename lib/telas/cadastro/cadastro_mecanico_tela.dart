@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'login_tela.dart';
+import 'package:flutter/gestures.dart';
+import 'termos_politica_page.dart';
+
 
 class CadastroMecanicoScreen extends StatefulWidget {
   const CadastroMecanicoScreen({super.key});
@@ -48,23 +51,44 @@ class _CadastroMecanicoScreenState extends State<CadastroMecanicoScreen> {
               _campoTexto("CPF"),
 
               const SizedBox(height: 10),
+              
               Row(
-                children: [
-                  Checkbox(
-                    value: concorda,
-                    activeColor: Colors.orange,
-                    onChanged: (val) {
-                      setState(() {
-                        concorda = val ?? false;
-                      });
-                    },
-                  ),
-                  const Expanded(
-                    child: Text("Eu concordo com os termos & política.",
-                        style: TextStyle(color: Colors.black87)),
-                  ),
-                ],
-              ),
+  children: [
+    Checkbox(
+      value: concorda,
+      activeColor: Colors.orange,
+      onChanged: (val) {
+        setState(() {
+          concorda = val ?? false;
+        });
+      },
+    ),
+    Expanded(
+      child: Text.rich(
+        TextSpan(
+          text: "Eu concordo com os ",
+          style: const TextStyle(color: Colors.black87),
+          children: [
+            TextSpan(
+              text: "termos e política.",
+              style: const TextStyle(color: Colors.orange),
+              recognizer: TapGestureRecognizer()
+                ..onTap = () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const TermosPoliticaPage(),
+                    ),
+                  );
+                },
+            ),
+          ],
+        ),
+      ),
+    ),
+  ],
+),
+
 
               const SizedBox(height: 10),
               SizedBox(

@@ -3,6 +3,9 @@ import 'cadastro_info_veiculo.dart';
 import '../../services/auth_service.dart';
 import '../../utils/validadores.dart';
 import '../../models/user_widget.dart';
+import 'termos_politica_page.dart';
+import 'package:flutter/gestures.dart';
+
 
 class CadastroUsuarioScreen extends StatefulWidget {
   const CadastroUsuarioScreen({super.key});
@@ -260,32 +263,42 @@ class _CadastroUsuarioScreenState extends State<CadastroUsuarioScreen> {
               const SizedBox(height: 15),
 
               // Checkbox
-              Row(
-                children: [
-                  Checkbox(
-                    value: _concordaTermos,
-                    onChanged: (value) {
-                      setState(() {
-                        _concordaTermos = value ?? false;
-                      });
-                    },
-                    activeColor: Colors.orange,
-                  ),
-                  const Expanded(
-                    child: Text.rich(
-                      TextSpan(
-                        text: "Eu concordo com os ",
-                        children: [
-                          TextSpan(
-                            text: "terms & policy.",
-                            style: TextStyle(color: Colors.orange),
-                          ),
-                        ],
-                      ),
+             Row(
+  children: [
+    Checkbox(
+      value: _concordaTermos,
+      onChanged: (value) {
+        setState(() {
+          _concordaTermos = value ?? false;
+        });
+      },
+      activeColor: Colors.orange,
+    ),
+    Expanded(
+      child: Text.rich(
+        TextSpan(
+          text: "Eu concordo com os ",
+          children: [
+            TextSpan(
+              text: "termos e política.",
+              style: const TextStyle(color: Colors.orange),
+              recognizer: TapGestureRecognizer()
+                ..onTap = () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const TermosPoliticaPage(),
                     ),
-                  ),
-                ],
-              ),
+                  );
+                },
+            ),
+          ],
+        ),
+      ),
+    ),
+  ],
+),
+
               const SizedBox(height: 10),
 
               // Botão próxima etapa
